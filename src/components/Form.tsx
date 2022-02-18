@@ -83,13 +83,14 @@ const Form = (props: any) => {
         switch (title) {
           case "Login":
             {
-              loginMutate({email: values.email, password : values.password})
+              loginMutate({email: values.email, password : values.password});
+
             }
             break;
 
           case "Register":
             {
-              registerMutate({email: values.email, password : values.password})
+              registerMutate({username:values.username, email: values.email, password : values.password})
             }
             break;
         
